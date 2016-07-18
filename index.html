@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/responsive-nav.js"></script>
+	<script>
+		var navigation = responsiveNav("#nav",{
+            animate: true,
+            transition: 400,
+            label: "Menu",
+            insert: "after",
+            customToggle: "",
+            openPos: "relative",
+            jsClass: "js",
+            debug: false,
+            init: function(){},
+            open: function(){},
+            close: function(){}
+			});
+	</script>
+</head>
+<body>
+    <header>
+    	<div class="header"></div>
+	    <div id="nav">   
+		    <ul>
+			    <li><a href="#">Home</a></li>
+			    <li><a href="#">About</a></li>
+			    <li><a href="#">Projects</a></li>
+			    <li><a href="#">Contact</a></li>
+		    </ul>
+	    </div>
+    </header>
+    <article>
+    	<section>
+    		<figure>
+    			<figcaption>我的文章</figcaption>
+    		</figure>
+    	</section>
+    </article>
+    <footer>
+    	<div class="footer"></div>
+    </footer>
+</body>
+</html>
